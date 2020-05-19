@@ -1,6 +1,5 @@
 function setup() {
     createCanvas(canvas.width, canvas.height);
-    bg = loadImage('assets/img/bg1.png');
 }
 bird = new Bird();
 _status = new Status();
