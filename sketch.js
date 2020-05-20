@@ -3,7 +3,6 @@ function setup() {
     song = createAudio('./assets/coins.mp3');
 }
 bird = null;
-bird = new Bird();
 _status = new Status();
 bar = new Bar();
 bars = [bar];
@@ -24,36 +23,17 @@ function draw() {
     }
 
 }
+
 function keyPressed() {
     if (bird != null) {
+
+    if (allBirdsAlive.length >0) {
         if (keyCode === 32) {
-            /*if (!bird.alive) {
-                bird = new Bird();
-                _status = new Status(_status);
-                bar = new Bar();
-                bars = [bar];
-            }*/
             bird.jump();
         }
+    }
     } else {
         bird = new Bird();
     }
 
-}
-// function mouseClicked() {
-//     bird.jump();
-// }
-function keyPressed() {
-    if (keyCode === 32) {
-        if (!bird.alive) {
-            bird = new Bird();
-            _status = new Status(_status);
-            bar = new Bar();
-            bars = [bar];
-        }
-        bird.jump();
-    }
-}
-function mouseClicked() {
-    bird.jump();
 }
