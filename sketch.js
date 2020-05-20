@@ -1,13 +1,19 @@
 function setup() {
     createCanvas(canvas.width, canvas.height);
+<<<<<<< HEAD
     song = createAudio('./assets/coins.mp3');
 }
 bird = null;
+=======
+}
+bird = new Bird();
+>>>>>>> ab3314f98f08460cddc1195fd60e85f51b4f2467
 _status = new Status();
 bar = new Bar();
 bars = [bar];
 function draw() {
     background(117, 133, 254);
+<<<<<<< HEAD
 
     if (bird === null) {
         fill(255)
@@ -43,3 +49,27 @@ function keyPressed() {
 // function mouseClicked() {
 //     bird.jump();
 // }
+=======
+    bars.forEach((bar, index) => {
+        bar.show();
+    });
+    bird.update();
+    bird.show();
+    _status.show();
+
+}
+function keyPressed() {
+    if (keyCode === 32) {
+        if (!bird.alive) {
+            bird = new Bird();
+            _status = new Status(_status);
+            bar = new Bar();
+            bars = [bar];
+        }
+        bird.jump();
+    }
+}
+function mouseClicked() {
+    bird.jump();
+}
+>>>>>>> ab3314f98f08460cddc1195fd60e85f51b4f2467
