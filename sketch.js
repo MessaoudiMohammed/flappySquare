@@ -44,12 +44,12 @@ function keyPressed() {
 // function mouseClicked() {
 //     bird.jump();
 // }
-    bars.forEach((bar, index) => {
-        bar.show();
-    });
-    bird.update();
-    bird.show();
-    _status.show();
+  //  bars.forEach((bar, index) => {
+ //       bar.show();
+//    });
+//    bird.update();
+//    bird.show();
+ //   _status.show();
 
 }
 function keyPressed() {
