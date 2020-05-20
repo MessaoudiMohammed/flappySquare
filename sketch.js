@@ -3,7 +3,6 @@ function setup() {
     song = createAudio('./assets/coins.mp3');
 }
 bird = null;
-}
 bird = new Bird();
 _status = new Status();
 bar = new Bar();
