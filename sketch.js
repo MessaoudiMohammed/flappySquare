@@ -7,14 +7,11 @@ bird = null;
 =======
 }
 bird = new Bird();
->>>>>>> ab3314f98f08460cddc1195fd60e85f51b4f2467
 _status = new Status();
 bar = new Bar();
 bars = [bar];
 function draw() {
     background(117, 133, 254);
-<<<<<<< HEAD
-
     if (bird === null) {
         fill(255)
         textSize(20);
@@ -49,7 +46,6 @@ function keyPressed() {
 // function mouseClicked() {
 //     bird.jump();
 // }
-=======
     bars.forEach((bar, index) => {
         bar.show();
     });
@@ -72,4 +68,3 @@ function keyPressed() {
 function mouseClicked() {
     bird.jump();
 }
->>>>>>> ab3314f98f08460cddc1195fd60e85f51b4f2467
