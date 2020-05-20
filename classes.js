@@ -127,11 +127,8 @@ class Status {
             text("Score:" + this.score, (canvas.width / 2), 25);
             if (bars[0].x < canvas.width / (9 / 2) && !bars[0].checked) {
                 this.score++;
-<<<<<<< HEAD
                 song.volume(0.05);
                 song.play();
-=======
->>>>>>> ab3314f98f08460cddc1195fd60e85f51b4f2467
                 bars[0].checked = true;
             }
         }
