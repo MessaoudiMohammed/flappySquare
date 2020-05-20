@@ -1,5 +1,8 @@
 # flappySquare
  Game Flappy Square created via HTML & p5.js
+ ## Demo
+ 
+ Link: [demo](https://oxigen1001.github.io/flappySquare/)
  
  ## Preview
  
