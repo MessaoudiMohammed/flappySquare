@@ -1,10 +1,8 @@
 function setup() {
     createCanvas(canvas.width, canvas.height);
-<<<<<<< HEAD
     song = createAudio('./assets/coins.mp3');
 }
 bird = null;
-=======
 }
 bird = new Bird();
 _status = new Status();
