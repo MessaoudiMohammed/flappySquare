@@ -26,12 +26,9 @@ function draw() {
 
 function keyPressed() {
     if (bird != null) {
-
-    if (allBirdsAlive.length >0) {
         if (keyCode === 32) {
             bird.jump();
         }
-    }
     } else {
         bird = new Bird();
     }
